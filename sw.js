@@ -1,5 +1,5 @@
 // Offline cache for the preview. A new build changes CACHE, so phones pick up updates.
-const CACHE = 'arabia-fera-preview-202610131241';
+const CACHE = 'arabia-fera-preview-202610131250';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 self.addEventListener('install', (e) => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES))); });
 self.addEventListener('activate', (e) => {
